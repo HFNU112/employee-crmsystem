@@ -1,9 +1,12 @@
+# 服务端口
+server:
+  port: 8081
 spring:
-  # \u6570\u636E\u6E90\u914D\u7F6E
+  # 数据源配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:///springboot_web_demo?charactEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/springboot_web_demo?charactEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: root
     servlet:
@@ -11,10 +14,18 @@ spring:
         enabled: true
         max-file-size: 2000MB
         max-request-size: 2000MB
-# \u670D\u52A1\u5668
-server:
-  port: 8081
-# \u63A7\u5236\u53F0\u6253\u5370sql\u8BED\u53E5
+  # 静态资源配置
+  resources:
+    static-locations: classpath:/templates/, classpath:/static/
+  # 关闭模板引擎缓存
+  thymeleaf:
+    cache: false
+# 日志输出
 logging:
   level:
     com.hu: debug
+mybatis:
+  # 指定全局配置文件位置
+  config-location: classpath:mybatis/mybatisConfig.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml

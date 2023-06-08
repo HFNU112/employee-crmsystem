@@ -1,1 +1,7 @@
+com\hu\domain\Emp.class
+com\hu\controller\UserController.class
+com\hu\config\MyMvcConfig$1.class
+com\hu\config\MyMvcConfig.class
+com\hu\domain\Department.class
+com\hu\domain\User.class
 com\hu\ManageApplication.class
