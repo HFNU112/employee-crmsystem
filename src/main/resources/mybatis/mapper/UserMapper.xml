@@ -7,6 +7,10 @@
     <resultMap id="userMap" type="user">
         <result column="username" property="username"></result>
         <result column="password" property="password"></result>
+        <result column="nick_name" property="nickName"></result>
+        <result column="user_type" property="userType"></result>
+        <result column="roles" property="roles"></result>
+        <result column="status" property="status"></result>
     </resultMap>
     <select id="findByUser" parameterType="map" resultMap="userMap">
         select * from tb_user where username = #{username} and password =#{password}

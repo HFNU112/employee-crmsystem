@@ -10,7 +10,7 @@
 
 		<title>Dashboard Template for Bootstrap</title>
 		<!-- Bootstrap core CSS -->
-		<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.5.0/css/bootstrap.css}" rel="stylesheet">
+		<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.css}" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="../../static/asserts/css/dashboard.css" rel="stylesheet" th:href="@{/asserts/css/dashboard.css}">
@@ -61,20 +61,21 @@
 				<!--引入侧边栏-->
 				<div th:replace="commons/bar::sidebar(activeUri='emps')"></div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+					<!-- 条件搜索框 -->
 					<form action="#" method="get" th:action="@{/emps}">
-						<p> <span class="span_select">姓名:</span> <input type="text" name="name">
-							<span class="span_select">性别:</span> <input type="text" name="gender">
+						<p> <span class="span_select">姓名:</span> <input type="text" name="name" placeholder="请输入姓名">
+							<span class="span_select">性别:</span> <input type="text" name="gender" placeholder="请输入性别">
 							<span class="span_select">部门:</span>
 							<select type="" name=deptId>
 								<option th:value="0">----请选择----</option>
-								<option th:each="dept:${depts}" th:value="${dept.id}">[[${dept.id}+${dept.deptName}]]</option>
+								<option th:each="dept:${depts}" th:value="${dept.id}">[[${dept.id}+${dept.departmentName}]]</option>
 							</select>
 							<button type="submit" class="btn btn-primary">查询</button>
 						</p>
 					</form>
 					
 					<h2><a class="btn btn-sm btn-success" th:href="@{/emp}">添加员工</a>
-						<a class="btn btn-sm btn-danger" th:attr="uri=@{/emps}" id="delAll" href="#">删除选中</a>  </h2>
+						<a class="btn btn-sm btn-danger" th:attr="uri=@{/emps}" id="delAll" href="#">批量删除</a>  </h2>
 					<div class="table-responsive">
 						<table class="table table-striped table-sm">
 							<thead>
@@ -87,6 +88,7 @@
 									<th>性别</th>
 									<th>部门</th>
 									<th>生日</th>
+									<th>操作</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -97,9 +99,9 @@
 									<!--使用emp来遍历emps，所以其默认状态变量为：empStat,empStat.count实现循环时递增序号-->
 									<td th:text="${empStat.count}"></td>
 									<td th:text="${emp.id}"></td>
-									<td th:text="${emp.name}"></td>
+									<td th:text="${emp.lastName}"></td>
 									<td th:text="${emp.email}"></td>
-									<td th:text="${emp.gender}"></td>
+									<td th:text="${emp.gender}=='0'?'女':'男'"></td>
 									<td th:text="${emp.deptId}"></td>
 									<td th:text="${#dates.format(emp.birth,'yyyy-MM-dd')}"></td>
 									<td>
@@ -112,19 +114,27 @@
 							</tbody>
 						</table>
 						<div>
+							<!-- 分页导航条
+                               前端传递的参数：
+                                  1、当前页码：currentPage
+                                  2、每页显示的条数：pageSize
+                               后端需要响应的参数：
+                                  1、当前页记录(集合)：records
+                                  2、总记录数：totalRecords
+                			-->
 							<nav aria-label="Page navigation example">
 								<ul class="pagination">
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSize=5,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
+										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSizes=5,lastName=${emp.lastName},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
 											<span aria-hidden="true">&laquo;</span>
 										</a>
 									</li>
 									
 									<th:block th:each="page:${#numbers.sequence(1,pb.totalPage)}" >
-									<li class="page-item " th:class="${(pb.currentPage==page)?'page-item active':'page-item'}"><a class="page-link" href="#" th:href="@{/emps(currentPage=${page},pageSize=7,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" th:text="${page}"></a></li>
+									<li class="page-item " th:class="${(pb.currentPage==page)?'page-item active':'page-item'}"><a class="page-link" href="#" th:href="@{/emps(currentPage=${page},pageSizes=5,lastName=${emp.lastName},gender=${emp.gender},deptId=${emp.deptId})}" th:text="${page}"></a></li>
 									</th:block>
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}+1,pageSize=5,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Next">
+										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}+1,pageSizes=5,lastName=${emp.lastName},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Next">
 											<span aria-hidden="true">&raquo;</span>
 										</a>
 									</li>

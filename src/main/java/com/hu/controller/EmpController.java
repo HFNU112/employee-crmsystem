@@ -1,15 +1,17 @@
 package com.hu.controller;
 
+import com.hu.domain.Department;
 import com.hu.domain.Emp;
 import com.hu.domain.PageBean;
+import com.hu.service.DeptService;
 import com.hu.service.EmpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author: Husp
@@ -20,6 +22,9 @@ public class EmpController {
 
     @Resource
     private EmpService empService;
+
+    @Resource
+    private DeptService deptService;
 
     /**
      * 查询员工列表
@@ -37,9 +42,61 @@ public class EmpController {
             pageBean.setPageSizes(5);
         }
         PageBean<Emp> pb = empService.findAll(pageBean, emp);
+        List<Department> depts = deptService.findAll();
 
         model.addAttribute("emp", emp);
+        model.addAttribute("depts", depts);
         model.addAttribute("pb", pb);
         return "emp/list";
     }
+
+    /**
+     * 来到添加的弹出层
+     * @param model
+     * @return
+     */
+    @GetMapping("/emp")
+    public String toAddPage(Model model){
+        List<Department> departments = deptService.findAll();
+        model.addAttribute("depts",departments);
+        return "emp/add";
+    }
+
+    /**
+     * 添加员工
+     * @param emp
+     * @return
+     */
+    @PostMapping("/emp")
+    public String save(Emp emp){
+        empService.save(emp);
+        return "redirect:/emps";
+    }
+
+    /**
+     * 来到修改页面
+     * @param id
+     * @param model
+     * @return
+     */
+    @GetMapping("/emp/{id}")
+    public String toUpdatePage(@PathVariable("id") Long id, Model model){
+        List<Department> departments = deptService.findAll();
+        model.addAttribute("depts", departments);
+        Emp emp = empService.findById(id);
+        model.addAttribute("emp", emp);
+        return "emp/add";
+    }
+
+    /**
+     * 修改员工
+     * @param emp
+     * @return
+     */
+    @PutMapping("/emp")
+    public String updateEmp(Emp emp){
+        empService.updateEmp(emp);
+        return "redirect:/emps";
+    }
+
 }

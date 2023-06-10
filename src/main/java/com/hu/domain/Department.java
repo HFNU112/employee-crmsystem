@@ -15,10 +15,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 public class Department implements Serializable {
 
-    //主键
+    /**主键*/
     private Long id;
 
-    //部门名称
+    /**部门名称*/
     private String departmentName;
 
 }

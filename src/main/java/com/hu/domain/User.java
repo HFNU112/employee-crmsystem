@@ -32,7 +32,7 @@ public class User implements Serializable {
     private String userType;
 
     //手机号码
-    private String phoneNumber;
+    private String roles;
 
     //状态
     private String status;

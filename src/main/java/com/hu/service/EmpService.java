@@ -12,4 +12,12 @@ public interface EmpService {
     //查询员工列表
     PageBean<Emp> findAll(PageBean<Emp> pageBean, Emp emp);
 
+    //添加员工
+    void save(Emp emp);
+
+    //根据员工id查询员工信息
+    Emp findById(Long id);
+
+    //修改员工
+    void updateEmp(Emp emp);
 }

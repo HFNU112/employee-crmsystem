@@ -8,7 +8,7 @@
 <!--公共代码抽取-->
 <!--顶部栏-->
 <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0" th:fragment="topbar">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">欢迎[[${session.loginUser.username}]]登录后台管理系统</a>
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">欢迎[[${session.loginUser.nickName}]]进入后台管理系统</a>
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
             <a class="nav-link" href="#" th:href="@{/index.html}">Sign out</a>

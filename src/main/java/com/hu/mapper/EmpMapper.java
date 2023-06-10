@@ -13,9 +13,18 @@ import java.util.List;
 @Mapper
 public interface EmpMapper {
 
-    //查询总条数
-    Integer findTotalCount();
-
     //查询员工列表
-    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
+    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes, @Param("lastName") String lastName, @Param("gender") String gender, @Param("deptId") Long deptId);
+
+    //查询总条数
+    Integer findTotalCount(@Param("lastName") String lastName, @Param("gender") String gender, @Param("deptId") Long deptId);
+
+    //添加员工
+    void save(Emp emp);
+
+    //根据员工id查询员工信息
+    Emp findById(Long id);
+
+    //修改员工
+    void updateEmp(Emp emp);
 }
