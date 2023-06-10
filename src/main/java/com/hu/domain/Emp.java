@@ -16,22 +16,22 @@ import java.util.Date;
 @AllArgsConstructor
 public class Emp implements Serializable {
 
-    //主键
+    /** 主键*/
     private Long id;
 
-    //姓名
+    /**姓名*/
     private String lastName;
 
-    //邮箱
+    /**邮箱*/
     private String email;
 
-    //性别
+    /**性别*/
     private String gender;
 
-    //出生日期
+    /**出生日期*/
     private Date birth;
 
-    //部门编号
+    /**部门编号*/
     private Long deptId;
 
 }

@@ -20,6 +20,9 @@ spring:
   # 关闭模板引擎缓存
   thymeleaf:
     cache: false
+  mvc:
+    # 日期转换类型
+    date-format: yyyy-MM-dd
 # 日志输出
 logging:
   level:

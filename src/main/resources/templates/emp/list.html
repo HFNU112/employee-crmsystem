@@ -92,7 +92,7 @@
 							<tbody>
 							 	<form id="delSelected" action="#" method="post">
 									<input type="hidden" name="_method" value="delete">
-								<tr th:each="emp:${pb.list}">
+								<tr th:each="emp:${pb.records}">
 									<td><input type="checkbox" class="td_checkbox" name="eid" th:value="${emp.id}"></td>
 									<!--使用emp来遍历emps，所以其默认状态变量为：empStat,empStat.count实现循环时递增序号-->
 									<td th:text="${empStat.count}"></td>
@@ -115,7 +115,7 @@
 							<nav aria-label="Page navigation example">
 								<ul class="pagination">
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSize=7,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
+										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSize=5,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
 											<span aria-hidden="true">&laquo;</span>
 										</a>
 									</li>
@@ -124,12 +124,12 @@
 									<li class="page-item " th:class="${(pb.currentPage==page)?'page-item active':'page-item'}"><a class="page-link" href="#" th:href="@{/emps(currentPage=${page},pageSize=7,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" th:text="${page}"></a></li>
 									</th:block>
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}+1,pageSize=7,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Next">
+										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}+1,pageSize=5,name=${emp.name},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Next">
 											<span aria-hidden="true">&raquo;</span>
 										</a>
 									</li>
 									<li>
-										<span id="span_page">共<span style="color: red">[[${pb.totalPage}]]</span>页，当前<span style="color: red">[[${pb.totalCount}]]</span>条记录</span>
+										<span id="span_page">共<span style="color: #ed181b">[[${pb.totalPage}]]</span>页，当前有<span style="color: #ed181b">[[${pb.totalCount}]]</span>条记录</span>
 									</li>
 								</ul>
 							</nav>
@@ -145,9 +145,9 @@
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js" th:src="@{/webjars/jquery/3.5.1/jquery.js}"></script>
-		<script type="text/javascript" src="asserts/js/popper.min.js" th:src="@{/webjars/popper.js/1.16.0/popper.js}"></script>
-		<script type="text/javascript" src="asserts/js/bootstrap.min.js" th:src="@{/webjars/bootstrap/4.5.0/js/bootstrap.js}"></script>
+		<script type="text/javascript" src="asserts/js/jquery-3.2.1.slim.min.js" th:src="@{/webjars/jquery/3.3.1/jquery.js}"></script>
+		<script type="text/javascript" src="asserts/js/popper.min.js" th:src="@{/webjars/popper.js/1.11.1/dist/popper.js}"></script>
+		<script type="text/javascript" src="asserts/js/bootstrap.min.js" th:src="@{/webjars/bootstrap/4.0.0/js/bootstrap.js}"></script>
 
 		<!-- Icons -->
 		<script type="text/javascript" src="../../static/asserts/js/feather.min.js" th:href="@{/asserts/js/feather.min.js}"></script>
