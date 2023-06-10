@@ -16,48 +16,27 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
+    <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="265d67ca-a61a-43fb-8f50-e0e1cc72374f" name="Default Changelist" comment="init project">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/config/MyMvcConfig.java" afterDir="false" />
+    <list default="true" id="4e70524b-b269-431f-ac5d-c2df806c45fb" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/controller/UserController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/domain/Department.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/domain/Emp.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mybatisConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/hu/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/ManageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/ManageApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/img/bootstrap-solid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/img/bootstrap-solid.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/Chart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/js/feather.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/feather.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/js/jquery-3.2.1.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/jquery-3.2.1.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/assert/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/asserts/js/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/config/MyMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/config/MyMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/commons/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/commons/bar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/css/dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/css/signin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/img/bootstrap-solid.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/js/feather.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/js/jquery-3.2.1.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/assert/js/popper.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/commons/bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/commons/bar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
@@ -66,13 +45,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,25 +57,16 @@
         <option name="userSettingsFile" value="D:\Java\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="jdkForImporter" value="1.8" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenRunner">
-    <option name="delegateBuildToMaven" value="true" />
-    <option name="jreName" value="1.8" />
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectId" id="2PsLZccQucV7SXlUdp973tv1cRr" />
+  <component name="ProjectId" id="2QzZuV98vwUstKXLwoMZ876776u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -113,22 +76,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15917969" />
     <property name="project.structure.side.proportion" value="0.26327944" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources\templates\commons" />
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources\templates\emp" />
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources" />
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources\static\assert" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources\mybatis" />
-      <recent name="E:\code\springboot-simple-manager-master\src\main\resources\templates" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -138,46 +89,87 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="ManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration default="true" type="JetRunConfigurationType">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-simple-manager-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hu.ManageApplication" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ManageApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="265d67ca-a61a-43fb-8f50-e0e1cc72374f" name="Default Changelist" comment="" />
-      <created>1684240898838</created>
+      <changelist id="4e70524b-b269-431f-ac5d-c2df806c45fb" name="Default Changelist" comment="" />
+      <created>1686358592472</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684240898838</updated>
-      <workItem from="1684240905359" duration="3202000" />
-      <workItem from="1684414879792" duration="1559000" />
-      <workItem from="1685709604040" duration="1236000" />
-      <workItem from="1685790510790" duration="165000" />
-      <workItem from="1686105222462" duration="2237000" />
-      <workItem from="1686130704109" duration="6126000" />
-      <workItem from="1686179734766" duration="42000" />
-      <workItem from="1686187916233" duration="4906000" />
-      <workItem from="1686227597068" duration="957000" />
+      <updated>1686358592472</updated>
+      <workItem from="1686358595492" duration="5122000" />
     </task>
-    <task id="LOCAL-00001" summary="init project">
-      <created>1684243895649</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684243895649</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,113 +180,82 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="296" y="6" width="957" height="811" key="#SpringbootSimpleManagerMasterApplication" timestamp="1685709936926">
+    <state x="296" y="6" key="#ManageApplication" timestamp="1686362188462">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="296" y="6" width="957" height="811" key="#SpringbootSimpleManagerMasterApplication/0.0.1536.824@0.0.1536.824" timestamp="1685709936926" />
-    <state x="223" y="67" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1686193894807">
+    <state x="296" y="6" key="#ManageApplication/0.0.1536.824@0.0.1536.824" timestamp="1686362188462" />
+    <state x="223" y="67" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1686361854154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1686193894807" />
-    <state x="574" y="118" width="691" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1686106173476">
+    <state x="223" y="67" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1686361854154" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1686358870155">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="118" width="691" height="588" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1686106173476" />
-    <state x="465" y="141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1684241622655">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1686358870155" />
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom" timestamp="1686363709792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="141" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1684241622655" />
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1684240987315">
+    <state width="1493" height="183" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686363709792" />
+    <state width="1493" height="183" key="GridCell.Tab.0.center" timestamp="1686363709792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1684240987315" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1686179775388">
+    <state width="1493" height="183" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1686363709792" />
+    <state width="1493" height="183" key="GridCell.Tab.0.left" timestamp="1686363709791">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1686179775388" />
-    <state width="1184" height="175" key="GridCell.Tab.0.bottom" timestamp="1686228388965">
+    <state width="1493" height="183" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1686363709791" />
+    <state width="1493" height="183" key="GridCell.Tab.0.right" timestamp="1686363709792">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.0.center" timestamp="1686228388965">
+    <state width="1493" height="183" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1686363709792" />
+    <state width="1169" height="187" key="GridCell.Tab.1.bottom" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.0.left" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.1.center" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.0.right" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.1.left" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.1.bottom" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.1.right" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.1.center" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.2.bottom" timestamp="1686363695197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.1.left" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686363695197" />
+    <state width="1169" height="187" key="GridCell.Tab.2.center" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.1.right" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.2.left" timestamp="1686363695196">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.2.bottom" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1686363695196" />
+    <state width="1169" height="187" key="GridCell.Tab.2.right" timestamp="1686363695197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.2.center" timestamp="1686228388965">
+    <state width="1169" height="187" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1686363695197" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1686358876620">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1184" height="175" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.2.left" timestamp="1686228388965">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1184" height="175" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state width="1184" height="175" key="GridCell.Tab.2.right" timestamp="1686228388965">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1184" height="175" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1686228388965" />
-    <state x="349" y="146" key="IDE.errors.dialog" timestamp="1686130883911">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="146" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1686130883911" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1686187933207">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1686187933207" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1684243983750">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1684243983750" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1686358876620" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springboot_simple_manager_master$ManageApplication.ic" NAME="ManageApplication Coverage Results" MODIFIED="1686358989112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.hu.*</FILTER>
+    </SUITE>
   </component>
 </project>
