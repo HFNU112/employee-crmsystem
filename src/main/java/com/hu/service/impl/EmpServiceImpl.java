@@ -41,18 +41,18 @@ public class EmpServiceImpl implements EmpService {
         pb.setPageSizes(pageSizes);
 
         //4.查询总条数
-        Integer totalCount = empMapper.findTotalCount(emp.getLastName(), emp.getGender(), emp.getDeptId());
+        Integer totalCount = empMapper.findTotalCount();
         pb.setTotalCount(totalCount);
         //5.查询每页显示的数据
         Integer start = (currentPage - 1) * pageSizes;
-        List<Emp> emps = empMapper.findAll(start, pageSizes, emp.getLastName(), emp.getGender(), emp.getDeptId());
+        List<Emp> emps = empMapper.findAll(start, pageSizes);
         pb.setRecords(emps);
 
         //6.查询总页码
         Integer totalPage = (totalCount % pageSizes)==0 ? (totalCount / pageSizes) : (totalCount / pageSizes) + 1;
         pb.setTotalPage(totalPage);
         //下一页按钮不超过最大页码
-        if (currentPage > totalPage){
+        if (currentPage >= totalPage){
              currentPage = totalPage;
              pb.setCurrentPage(currentPage);
         }
@@ -85,6 +85,28 @@ public class EmpServiceImpl implements EmpService {
     @Override
     public void updateEmp(Emp emp) {
         empMapper.updateEmp(emp);
+    }
+
+    /**
+     * 删除单个员工
+     * @param id
+     */
+    @Override
+    public void deleteById(Long id) {
+        empMapper.deleteById(id);
+    }
+
+    /**
+     * 删除选中
+     * @param ids
+     */
+    @Override
+    public void deleteByIds(String[] ids) {
+        if (ids != null || ids.length > 0){
+            for (String id : ids) {
+                empMapper.deleteById(Long.parseLong(id));
+            }
+        }
     }
 
 

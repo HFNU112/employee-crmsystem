@@ -16,7 +16,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class Emp implements Serializable {
 
-    /** 主键*/
+    /**主键*/
     private Long id;
 
     /**姓名*/

@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -96,6 +97,29 @@ public class EmpController {
     @PutMapping("/emp")
     public String updateEmp(Emp emp){
         empService.updateEmp(emp);
+        return "redirect:/emps";
+    }
+
+    /**
+     * 删除单个员工
+     * @param id
+     * @return
+     */
+    @DeleteMapping("/emp/{id}")
+    public String deleteById(@PathVariable("id") Long id){
+        empService.deleteById(id);
+        return "redirect:/emps";
+    }
+
+    /**
+     * 删除选中
+     * @param request
+     * @return
+     */
+    @DeleteMapping("/emps")
+    public String deleteByIds(HttpServletRequest request){
+        String[] eids = request.getParameterValues("eid");
+        empService.deleteByIds(eids);
         return "redirect:/emps";
     }
 

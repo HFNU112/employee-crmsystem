@@ -14,10 +14,10 @@ import java.util.List;
 public interface EmpMapper {
 
     //查询员工列表
-    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes, @Param("lastName") String lastName, @Param("gender") String gender, @Param("deptId") Long deptId);
+    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
 
     //查询总条数
-    Integer findTotalCount(@Param("lastName") String lastName, @Param("gender") String gender, @Param("deptId") Long deptId);
+    Integer findTotalCount();
 
     //添加员工
     void save(Emp emp);
@@ -27,4 +27,7 @@ public interface EmpMapper {
 
     //修改员工
     void updateEmp(Emp emp);
+
+    //删除员工
+    void deleteById(Long id);
 }

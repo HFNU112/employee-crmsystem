@@ -20,4 +20,10 @@ public interface EmpService {
 
     //修改员工
     void updateEmp(Emp emp);
+
+    //删除单个员工
+    void deleteById(Long id);
+
+    //删除选中
+    void deleteByIds(String[] ids);
 }

@@ -14,47 +14,27 @@
     </resultMap>
     <select id="findAll" parameterType="map" resultMap="empMap">
         select id, last_name, email, gender, birth, dept_id from tb_employee
-        <where>
-            <if test="lastName!=null || lastName != ''">
-                and last_name=#{lastName}
-            </if>
-            <if test="gender!=null || gender != ''">
-                and gender=#{gender}
-            </if>
-            <if test="deptId!=null || deptId != 0L">
-                and dept_id=#{deptId}
-            </if>
-        </where>
         limit #{start},#{pageSizes}
     </select>
 
     <select id="findTotalCount" parameterType="map" resultType="java.lang.Integer">
         select count(*) from tb_employee
-        <where>
-            <if test="lastName!=null || lastName != ''">
-                and last_name=#{lastName}
-            </if>
-            <if test="gender!=null || gender != ''">
-                and gender=#{gender}
-            </if>
-            <if test="deptId!=null || deptId != 0L">
-                and dept_id=#{deptId}
-            </if>
-        </where>
     </select>
 
     <insert id="save" parameterType="emp">
         insert into tb_employee(last_name, email, gender, birth, dept_id) values (#{lastName}, #{email}, #{gender}, #{birth}, #{deptId})
     </insert>
 
-    <select id="findById" parameterType="long" resultType="emp">
+    <select id="findById" parameterType="long" resultMap="empMap">
         select * from tb_employee where id = #{id}
     </select>
 
     <update id="updateEmp" parameterType="emp">
-        update tb_employee
-        set last_name=#{lastName}, email=#{email}, gender=#{gender}, birth=#{birth}, dept_id=#{deptId}
-        where id=#{id}
+        update tb_employee set last_name=#{lastName},email=#{email},gender=#{gender},birth=#{birth},dept_id=#{deptId} where id=#{id}
     </update>
+
+    <delete id="deleteById" parameterType="long">
+        delete from tb_employee where id = #{id}
+    </delete>
 
 </mapper>

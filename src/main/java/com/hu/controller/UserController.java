@@ -35,7 +35,7 @@ public class UserController {
             session.setAttribute("loginUser", u);  //用户信息存入session
             return "redirect:/main.html";
         } else {
-            model.addAttribute("msg", "用户名或密码错误");
+            model.addAttribute("msg", "用户名或密码错误~");
             return "login";
         }
     }

@@ -55,18 +55,18 @@
 							1.页面创建一个post表单
                         	2.创建一个input项，name="_method";值就是我们指定的请求方式
 						-->
-						<input type="hidden" name="_method" value="put" th:if="${emp!=null}">
-						<input type="hidden" name="id" th:value="${emp.id}" th:if="${emp!=null}">
+						<input type="hidden" name="_method" th:if="${emp!=null}" value="PUT" >
+						<input type="hidden" name="id" th:if="${emp != null}" th:value="${emp.id}">
 						<div class="form-group">
-							<label>name</label>
-							<input type="text" class="form-control" name="lastName" placeholder="zhangsan" th:value="${emp!=null}?${emp.name}">
+							<label>姓名</label>
+							<input type="text" class="form-control" name="lastName" placeholder="zhangsan" th:value="${emp!=null}?${emp.lastName}">
 						</div>
 						<div class="form-group">
-							<label>email</label>
+							<label>邮箱</label>
 							<input type="email" class="form-control" name="email" placeholder="zhangsan@atguigu.com" th:value="${emp!=null}?${emp.email}">
 						</div>
 						<div class="form-group">
-							<label>gender</label><br/>
+							<label>性别</label><br/>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="gender"  value="1" th:checked="${emp!=null}?${emp.gender=='1'}">
 								<label class="form-check-label">男</label>
@@ -77,17 +77,17 @@
 							</div>
 						</div>
 						<div class="form-group">
-							<label>department</label>
+							<label>部门</label>
 							<select class="form-control" name="deptId">
 								<!-- 提交部门id -->
 								<option th:selected="${emp!=null}?${dept.id == emp.deptId}" th:value="${dept.id}" th:each="dept:${depts}">[[${dept.departmentName}]]</option>
 							</select>
 						</div>
 						<div class="form-group">
-							<label>birth</label>
-							<input type="date" class="form-control" name="birth" placeholder="zhangsan" th:value="${emp!=null}?${#dates.format(emp.birth, 'yyyy-MM-dd')}">
+							<label>生日</label>
+							<input type="date" class="form-control" name="birth" placeholder="1999-01-01" th:value="${emp!=null}?${#dates.format(emp.birth, 'yyyy-MM-dd')}">
 						</div>
-						<button type="submit" class="btn btn-primary" th:text="${emp!=null}?'修改':'保存'">保存</button>
+						<button type="submit" class="btn btn-primary" th:text="${emp != null}?'修改':'添加'">添加</button>
 					</form>
 				</main>
 

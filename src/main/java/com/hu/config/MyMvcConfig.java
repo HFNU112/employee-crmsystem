@@ -1,5 +1,6 @@
 package com.hu.config;
 
+import com.hu.intercepter.LoginHandlerIntercepter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -18,6 +19,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
 
         WebMvcConfigurer configurer = new WebMvcConfigurer() {
 
+            //视图解析器
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
                 registry.addViewController("/").setViewName("login");
@@ -25,7 +27,14 @@ public class MyMvcConfig implements WebMvcConfigurer {
                 registry.addViewController("/main.html").setViewName("dashboard");
             }
 
+            //登录拦截器
+            @Override
+            public void addInterceptors(InterceptorRegistry registry) {
+                registry.addInterceptor(new LoginHandlerIntercepter()).addPathPatterns("/**")
+                        .excludePathPatterns("/", "/login.html", "/login", "/index.html", "/asserts/**","/webjars/**");
+            }
         };
         return configurer;
     }
+
 }

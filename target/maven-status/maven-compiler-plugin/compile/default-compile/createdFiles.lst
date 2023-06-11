@@ -1,5 +1,6 @@
 com\hu\controller\UserController.class
 com\hu\mapper\UserMapper.class
+com\hu\intercepter\LoginHandlerIntercepter.class
 com\hu\service\UserService.class
 com\hu\service\impl\EmpServiceImpl.class
 com\hu\config\MyMvcConfig.class

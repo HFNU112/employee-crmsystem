@@ -11,6 +11,7 @@ E:\work\employee-crmsystem\src\main\java\com\hu\domain\PageBean.java
 E:\work\employee-crmsystem\src\main\java\com\hu\ManageApplication.java
 E:\work\employee-crmsystem\src\main\java\com\hu\service\DeptService.java
 E:\work\employee-crmsystem\src\main\java\com\hu\domain\Department.java
+E:\work\employee-crmsystem\src\main\java\com\hu\intercepter\LoginHandlerIntercepter.java
 E:\work\employee-crmsystem\src\main\java\com\hu\mapper\EmpMapper.java
 E:\work\employee-crmsystem\src\main\java\com\hu\service\UserService.java
 E:\work\employee-crmsystem\src\main\java\com\hu\config\MyMvcConfig.java
