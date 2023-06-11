@@ -5,6 +5,7 @@ E:\work\employee-crmsystem\src\main\java\com\hu\domain\User.java
 E:\work\employee-crmsystem\src\main\java\com\hu\service\EmpService.java
 E:\work\employee-crmsystem\src\main\java\com\hu\domain\Emp.java
 E:\work\employee-crmsystem\src\main\java\com\hu\controller\EmpController.java
+E:\work\employee-crmsystem\src\main\java\com\hu\config\MyLocaleResolver.java
 E:\work\employee-crmsystem\src\main\java\com\hu\service\impl\EmpServiceImpl.java
 E:\work\employee-crmsystem\src\main\java\com\hu\service\impl\UserServiceImpl.java
 E:\work\employee-crmsystem\src\main\java\com\hu\domain\PageBean.java

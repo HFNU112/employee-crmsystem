@@ -3,6 +3,7 @@ package com.hu.config;
 import com.hu.intercepter.LoginHandlerIntercepter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -35,6 +36,12 @@ public class MyMvcConfig implements WebMvcConfigurer {
             }
         };
         return configurer;
+    }
+
+    // 注册国际化信息解析器
+    @Bean
+    public LocaleResolver localeResolver(){
+        return new MyLocaleResolver();
     }
 
 }

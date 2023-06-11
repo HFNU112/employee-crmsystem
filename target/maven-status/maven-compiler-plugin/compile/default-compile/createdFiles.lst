@@ -14,6 +14,7 @@ com\hu\service\DeptService.class
 com\hu\service\EmpService.class
 com\hu\mapper\DeptMapper.class
 com\hu\service\impl\UserServiceImpl.class
+com\hu\config\MyLocaleResolver.class
 com\hu\config\MyMvcConfig$1.class
 com\hu\mapper\EmpMapper.class
 com\hu\domain\User.class

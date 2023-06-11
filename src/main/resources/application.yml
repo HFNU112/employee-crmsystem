@@ -27,6 +27,9 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
+  #设置国际化基础名
+  messages:
+    basename: i18n.login
 # 日志输出
 logging:
   level:
