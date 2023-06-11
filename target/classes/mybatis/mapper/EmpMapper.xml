@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hu.mapper.EmpMapper">
+
+    <resultMap id="empMap" type="emp">
+        <id column="id" property="id"></id>
+        <result column="last_name" property="lastName"></result>
+        <result column="email" property="email"></result>
+        <result column="gender" property="gender"></result>
+        <result column="birth" property="birth"></result>
+        <result column="dept_id" property="deptId"></result>
+    </resultMap>
+    <select id="findAll" parameterType="map" resultMap="empMap">
+        select id, last_name, email, gender, birth, dept_id from tb_employee
+        limit #{start},#{pageSizes}
+    </select>
+
+    <select id="findTotalCount" parameterType="map" resultType="java.lang.Integer">
+        select count(*) from tb_employee
+    </select>
+
+    <insert id="save" parameterType="emp">
+        insert into tb_employee(last_name, email, gender, birth, dept_id) values (#{lastName}, #{email}, #{gender}, #{birth}, #{deptId})
+    </insert>
+
+    <select id="findById" parameterType="long" resultMap="empMap">
+        select * from tb_employee where id = #{id}
+    </select>
+
+    <update id="updateEmp" parameterType="emp">
+        update tb_employee set last_name=#{lastName},email=#{email},gender=#{gender},birth=#{birth},dept_id=#{deptId} where id=#{id}
+    </update>
+
+    <delete id="deleteById" parameterType="long">
+        delete from tb_employee where id = #{id}
+    </delete>
+
+</mapper>
