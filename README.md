@@ -5,9 +5,13 @@
 
 #### 项目演示
 1. 登录
+
 ![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/login.gif)
+
 2. 国际化
+
 ![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/i8n.gif)
+
 3. 添加员工
 
 4.删除员工
@@ -15,6 +19,7 @@
 5.修改员工
 
 6.分页查询
+
 ![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/query.gif)
 
 7.模糊条件查询
