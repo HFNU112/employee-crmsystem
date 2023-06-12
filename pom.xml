@@ -42,6 +42,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
         <!-- 引入jQuery webjars依赖 静态资源映射 -->
         <dependency>
             <groupId>org.webjars</groupId>
