@@ -34,4 +34,10 @@ public class Emp implements Serializable {
     /**部门编号*/
     private Long deptId;
 
+    /**入职日期*/
+    private Date hireDate;
+
+    /**员工薪资*/
+    private Long salary;
+
 }

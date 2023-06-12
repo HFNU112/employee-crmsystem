@@ -11,9 +11,11 @@
         <result column="gender" property="gender"></result>
         <result column="birth" property="birth"></result>
         <result column="dept_id" property="deptId"></result>
+        <result column="hire_date" property="hireDate"></result>
+        <result column="salary" property="salary"></result>
     </resultMap>
     <select id="findAll" parameterType="map" resultMap="empMap">
-        select id, last_name, email, gender, birth, dept_id from tb_employee
+        select id, last_name, email, gender, birth, dept_id, hire_date, salary from tb_employee
         limit #{start},#{pageSizes}
     </select>
 
