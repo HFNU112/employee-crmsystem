@@ -101,6 +101,20 @@
             <version>3.14</version>
         </dependency>
 
+        <!--&lt;!&ndash;mybatis-plus&ndash;&gt;
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.0.5</version>
+        </dependency>
+
+        &lt;!&ndash;velocity模板引擎 mybatis-plus 代码生成器需要&ndash;&gt;
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity-engine-core</artifactId>
+            <version>2.2</version>
+        </dependency>-->
+
     </dependencies>
 
     <build>

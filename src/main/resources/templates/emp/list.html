@@ -8,7 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Dashboard Template for Bootstrap</title>
+		<title>员工列表</title>
 		<!-- Bootstrap core CSS -->
 		<link href="asserts/css/bootstrap.min.css" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.css}" rel="stylesheet">
 
@@ -63,7 +63,7 @@
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<!-- 条件搜索框 -->
 					<form action="#" method="get" th:action="@{/emps}">
-						<p> <span class="span_select">姓名:</span> <input type="text" name="name" placeholder="请输入姓名">
+						<p> <span class="span_select">姓名:</span> <input type="text" name="lastName" placeholder="请输入姓名">
 							<span class="span_select">性别:</span> <input type="text" name="gender" placeholder="请输入性别">
 							<span class="span_select">部门:</span>
 							<select type="" name=deptId>

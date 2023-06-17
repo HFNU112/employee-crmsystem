@@ -9,7 +9,7 @@
         <result column="department_name" property="departmentName"></result>
     </resultMap>
     <select id="findAll" parameterType="map" resultMap="deptMap">
-        select * from tb_department
+        select * from sys_department
     </select>
 
 </mapper>

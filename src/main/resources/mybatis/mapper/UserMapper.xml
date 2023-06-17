@@ -13,7 +13,7 @@
         <result column="status" property="status"></result>
     </resultMap>
     <select id="findByUser" parameterType="map" resultMap="userMap">
-        select * from tb_user where username = #{username} and password =#{password}
+        select * from sys_user where username = #{username} and password =#{password}
     </select>
 
 </mapper>
