@@ -4,6 +4,7 @@ package com.hu.controller;
 import com.hu.domain.Role;
 import com.hu.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -30,8 +31,10 @@ public class RoleController {
      * @return 角色集合
      */
     @GetMapping("/roles")
-    public List<Role> role(){
-        return roleService.findAll();
+    public String role(Model model){
+        List<Role> roles = roleService.findAll();
+        model.addAttribute("roles",roles);
+        return "role/list";
     }
 
 }
