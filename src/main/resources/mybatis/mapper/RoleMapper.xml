@@ -10,7 +10,14 @@
         <result column="create_time" property="createTime"></result>
         <result column="update_time" property="updateTime"></result>
     </resultMap>
-    <select id="findAll" resultMap="roleMap">
+    <select id="list" resultMap="roleMap">
         select * from sys_role
+        limit #{start},#{pageSizes}
     </select>
+
+    <select id="findTotalCount" parameterType="map" resultType="java.lang.Integer">
+        select count(*) from sys_role
+    </select>
+
+
 </mapper>

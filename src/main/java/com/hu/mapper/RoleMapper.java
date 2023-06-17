@@ -2,6 +2,7 @@ package com.hu.mapper;
 
 import com.hu.domain.Role;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,6 +18,9 @@ import java.util.List;
 public interface RoleMapper {
 
     //查询所有角色
-    List<Role> findAll();
+    List<Role> list(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
+
+    //查询总条数
+    Integer findTotalCount();
 
 }

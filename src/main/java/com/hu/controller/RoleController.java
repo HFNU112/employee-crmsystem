@@ -1,6 +1,7 @@
 package com.hu.controller;
 
 
+import com.hu.domain.PageBean;
 import com.hu.domain.Role;
 import com.hu.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +32,16 @@ public class RoleController {
      * @return 角色集合
      */
     @GetMapping("/roles")
-    public String role(Model model){
-        List<Role> roles = roleService.findAll();
-        model.addAttribute("roles",roles);
+    public String findAllRole(PageBean<Role> pageBean, Role role, Model model){
+        if (pageBean.getCurrentPage() == null|| "".equals(pageBean.getCurrentPage())){
+            pageBean.setCurrentPage(1);
+        }
+        if (pageBean.getPageSizes()==null || "".equals(pageBean.getPageSizes())){
+            pageBean.setPageSizes(5);
+        }
+        PageBean<Role> pb = roleService.list(pageBean, role);
+        model.addAttribute("pb",pb);
+        model.addAttribute("role", role);
         return "role/list";
     }
 
