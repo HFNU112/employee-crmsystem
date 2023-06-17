@@ -20,7 +20,7 @@
 
 6.分页查询
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/query.gif)
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/sortPage.gif)
 
 7.模糊条件查询
 
