@@ -10,7 +10,7 @@
         <result column="create_time" property="createTime"></result>
         <result column="update_time" property="updateTime"></result>
     </resultMap>
-    <select id="list" resultMap="roleMap">
+    <select id="findAllRole" resultMap="roleMap">
         select * from sys_role
         limit #{start},#{pageSizes}
     </select>
@@ -19,5 +19,8 @@
         select count(*) from sys_role
     </select>
 
+    <delete id="deleteById" parameterType="long">
+        delete from sys_role where id = #{id}
+    </delete>
 
 </mapper>

@@ -18,9 +18,11 @@ import java.util.List;
 public interface RoleMapper {
 
     //查询所有角色
-    List<Role> list(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
+    List<Role> findAllRole(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
 
     //查询总条数
     Integer findTotalCount();
 
+    //删除角色
+    void deleteById(@Param("id") Long id);
 }

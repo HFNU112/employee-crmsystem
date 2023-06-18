@@ -30,7 +30,7 @@ public class RoleServiceImpl implements RoleService {
      * @return
      */
     @Override
-    public PageBean<Role> list(PageBean<Role> pageBean, Role role) {
+    public PageBean<Role> findAllRole(PageBean<Role> pageBean, Role role) {
         //1.获得当前页参数
         Integer currentPage = pageBean.getCurrentPage();
         //上一页按钮不能超过1
@@ -58,8 +58,17 @@ public class RoleServiceImpl implements RoleService {
 
         //4.查询每页显示的数据
         Integer start = (currentPage - 1) * pageSizes;
-        List<Role> roleList = roleMapper.list(start, pageSizes);
+        List<Role> roleList = roleMapper.findAllRole(start, pageSizes);
         pb.setRecords(roleList);
         return pb;
+    }
+
+    /**
+     * 删除角色
+     * @param id
+     */
+    @Override
+    public void deleteById(Long id) {
+        roleMapper.deleteById(id);
     }
 }

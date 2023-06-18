@@ -16,7 +16,8 @@ import java.util.List;
 public interface RoleService {
 
     //查询所有角色
-    PageBean<Role> list(PageBean<Role> pageBean, Role role);
+    PageBean<Role> findAllRole(PageBean<Role> pageBean, Role role);
 
-
+    //删除角色
+    void deleteById(Long id);
 }
