@@ -123,4 +123,28 @@ public class EmpController {
         return "redirect:/emps";
     }
 
+    /**
+     * 按员工条件分页查询
+     * @param pageBean
+     * @param emp
+     * @param model
+     * @return
+     */
+    @GetMapping("/findPageQueryRole")
+    public String findPageQueryRole(PageBean<Emp> pageBean, Emp emp, Model model){
+        if (pageBean.getCurrentPage()==null || "".equals(pageBean.getCurrentPage())){
+            pageBean.setCurrentPage(1);
+        }
+        if (pageBean.getPageSizes()==null || "".equals(pageBean.getPageSizes())){
+            pageBean.setPageSizes(5);
+        }
+
+        PageBean<Emp> pb = empService.findPageQueryRole(pageBean, emp);
+        List<Department> departments = deptService.findAll();
+
+        model.addAttribute("pb", pb);
+        model.addAttribute("departments", departments);
+        return "emp/list";
+    }
+
 }

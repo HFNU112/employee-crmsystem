@@ -39,4 +39,35 @@
         delete from sys_employee where id = #{id}
     </delete>
 
+    <select id="findPageQueryRole" parameterType="map" resultMap="empMap">
+        select * from sys_employee
+        <where>
+            <if test="lastName != null || lastName !='' ">
+                and last_name like #{lastName}
+            </if>
+            <if test="gender != null || gender != ''">
+                and gender = #{gender}
+            </if>
+            <if test="deptId != null || deptId != 0">
+                and dept_id = #{deptId}
+            </if>
+        </where>
+        limit #{start}, #{pageSizes}
+    </select>
+
+    <select id="findPageTotalCount" parameterType="map" resultType="java.lang.Integer">
+        select count(*) from sys_employee
+        <where>
+            <if test="lastName != null || lastName !='' ">
+                and last_name like #{lastName}
+            </if>
+            <if test="gender != null || gender != ''">
+                and gender = #{gender}
+            </if>
+            <if test="deptId != null || deptId != 0">
+                and dept_id = #{deptId}
+            </if>
+        </where>
+    </select>
+
 </mapper>

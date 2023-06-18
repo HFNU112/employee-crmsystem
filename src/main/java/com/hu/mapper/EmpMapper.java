@@ -30,4 +30,10 @@ public interface EmpMapper {
 
     //删除员工
     void deleteById(Long id);
+
+    //查询emp集合数据
+    List<Emp> findPageQueryRole(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes, @Param("lastName") String lastName,@Param("gender") String gender,@Param("deptId") Long deptId);
+
+    //查询分页总数
+    Integer findPageTotalCount(@Param("lastName") String lastName,@Param("gender") String gender,@Param("deptId") Long deptId);
 }

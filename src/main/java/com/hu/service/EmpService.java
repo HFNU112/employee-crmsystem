@@ -26,4 +26,7 @@ public interface EmpService {
 
     //删除选中
     void deleteByIds(String[] ids);
+
+    //按员工条件分页查询
+    PageBean<Emp> findPageQueryRole(PageBean<Emp> pageBean, Emp emp);
 }

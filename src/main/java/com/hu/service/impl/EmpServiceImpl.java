@@ -109,5 +109,43 @@ public class EmpServiceImpl implements EmpService {
         }
     }
 
+    /**
+     * 按员工条件分页查询
+     * @param pageBean
+     * @param emp
+     * @return
+     */
+    @Override
+    public PageBean<Emp> findPageQueryRole(PageBean<Emp> pageBean, Emp emp) {
+        //1.获取前端传来的currentPage
+        Integer currentPage = pageBean.getCurrentPage();
+        //控制上一页操作超出
+        if (currentPage < 1){
+            currentPage = 1;
+        }
+        //2.获取前端传来的pageSize
+        Integer pageSizes = pageBean.getPageSizes();
+        //3.创建一个新的pageBean对象
+        PageBean<Emp> pb = new PageBean<>();
+        pb.setCurrentPage(currentPage);
+        pb.setPageSizes(pageSizes);
+        //4.查询总记录数，并设置到新的pb对象中
+        Integer totalCount = empMapper.findPageTotalCount(emp.getLastName(), emp.getGender(), emp.getDeptId());
+        pb.setTotalCount(totalCount);
+        //5.查询emp集合数据，先计算开始的索引
+        Integer start = (currentPage - 1) * pageSizes;
+        List<Emp> empList = empMapper.findPageQueryRole(start, pageSizes, emp.getLastName(), emp.getGender(), emp.getDeptId());
+        pb.setRecords(empList);
+        //6.计算总页码
+        Integer totalPage =(totalCount % pageSizes)==0 ? totalCount / pageSizes:(totalCount / pageSizes)+1;
+        pb.setTotalPage(totalPage);
+        //控制下一页操作超出
+        if (currentPage >= totalPage){
+            currentPage = totalPage;
+            pb.setCurrentPage(currentPage);
+        }
+        return pb;
+    }
+
 
 }
