@@ -11,8 +11,8 @@
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">欢迎[[${session.loginUser.nickName}]]进入后台管理系统</a>
     <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <!--<a class="nav-link" href="#" th:href="@{/index.html}">Sign out</a>-->
-            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <a class="nav-link" href="#" th:href="@{/index.html}">Sign out</a>
+            <!--<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         [[${session.loginUser.nickName}]]
@@ -22,7 +22,7 @@
                         <li><a class="dropdown-item" href="#" th:href="@{/index.html}">Sign out</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
         </li>
     </ul>
 </nav>
@@ -71,10 +71,16 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" th:href="@{/roles(currentPage=1, pageSizes=5)}"
+                <a class="nav-link" href="#" th:href="@{/roles(currentPage=1, pageSizes=3)}"
                    th:class="${activeUri=='roles'?'nav-link active':'nav-link'}">
                     <span data-feather="layers"></span>
                     角色管理
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <span data-feather="bar-chart-2"></span>
+                    菜单管理
                 </a>
             </li>
         </ul>
