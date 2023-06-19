@@ -127,10 +127,10 @@
 									</li>
 									
 									<th:block th:each="page:${#numbers.sequence(1,pb.totalPage)}" >
-									<li class="page-item " th:class="${(pb.currentPage==page)?'page-item active':'page-item'}"><a class="page-link" href="#" th:href="@{/roles(currentPage=${page},pageSizes=5)}" th:text="${page}"></a></li>
+									<li class="page-item " th:class="${(pb.currentPage==page)?'page-item active':'page-item'}"><a class="page-link" href="#" th:href="@{/roles(currentPage=${page},pageSizes=3)}" th:text="${page}"></a></li>
 									</th:block>
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/roles(currentPage=${pb.currentPage}+1,pageSizes=5)}" aria-label="Next">
+										<a class="page-link" href="#" th:href="@{/roles(currentPage=${pb.currentPage}+1,pageSizes=3)}" aria-label="Next">
 											<span aria-hidden="true">&raquo;</span>
 										</a>
 									</li>

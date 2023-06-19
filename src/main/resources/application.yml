@@ -21,12 +21,13 @@ spring:
   thymeleaf:
     cache: false
   mvc:
-    # 日期转换类型
-    date-format: yyyy-MM-dd
     # 开启隐藏域的 method
     hiddenmethod:
       filter:
         enabled: true
+    format:
+      # 日期转换类型
+      date: yyyy-MM-dd
   #设置国际化基础名
   messages:
     basename: i18n.login
