@@ -1,2 +1,3 @@
 com\hu\poi\PoiExcelTest.class
+com\hu\generator\MyGenerator.class
 com\hu\SpringbootSimpleManagerMasterApplicationTests.class

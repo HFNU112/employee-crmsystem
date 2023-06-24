@@ -14,7 +14,7 @@ import org.springframework.stereotype.Controller;
  * @since 2023-06-18
  */
 @Controller
-@RequestMapping("/generator/menu")
+@RequestMapping("/menu")
 public class MenuController {
 
 }
