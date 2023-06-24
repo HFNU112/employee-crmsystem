@@ -61,26 +61,13 @@
                 <div th:replace="commons/bar::sidebar(activeUri='emps')"></div>
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
                     <!-- 条件搜索框 -->
-                    <form action="#" method="get" th:action="@{/findPageQueryRole}">
-                        <p> <span class="span_select">姓名:</span> <input type="text" name="lastName" placeholder="请输入姓名">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>----请选择性别-----</option>
-                                <option value="0" th:value="${emp.gender}=='0'">女</option>
-                                <option value="1" th:value="${emp.gender}=='1'">男</option>
-                            </select>
-                            <span class="span_select">部门:</span>
-                            <select type="" name=deptId>
-                                <option th:value="0">----请选择----</option>
-                                <option th:each="dept:${departments}" th:value="${dept.id}">[[${dept.id}+${dept.departmentName}]]</option>
-                            </select>
-                            <button type="submit" class="btn btn-primary">查询</button>
-                        </p>
-                    </form>
+
 
                     <h2><a class="btn btn-sm btn-success" th:href="@{/emp}">添加员工</a>
                         <a class="btn btn-sm btn-danger" th:attr="uri=@{/emps}" id="delAll" href="#">批量删除</a>
                         <button class="btn btn-light">导出</button>
                     </h2>
+                    <!-- 数据表格 -->
                     <div class="table-responsive">
                         <table class="table table-striped table-sm">
                             <thead>

@@ -6,33 +6,33 @@
 #### 项目演示
 1. 登录
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/login.gif)
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/login.gif "login.gif")
 
 2. 国际化
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/i8n.gif)
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/i18n.gif "i18n.gif")
 
 3. 添加员工
 
-4.删除员工
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/add.gif "add.gif")
 
-5.修改员工
+4. 删除员工
 
-6.分页查询
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/delete.gif "delete.gif")
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/sortPage.gif)
+5. 修改员工
 
-7.模糊条件查询
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/update.gif "update.gif")
 
-功能待开发
+6. 分页查询
 
-8.文件上传
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/query.gif "query.gif")
 
-功能待开发
+7. 条件查询
 
-9.导出/导入
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/sortPage.gif "sortPage.gif")
 
-功能待开发
+
 
 
 
