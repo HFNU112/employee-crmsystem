@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="352a9f3e-b886-4d48-a4e7-6f2b8fb6a5a3" name="Default Changelist" comment="fix:修改文件">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/controller/EmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/controller/EmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/mapper/EmpMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/mapper/EmpMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/service/EmpService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/service/EmpService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hu/service/impl/EmpServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hu/service/impl/EmpServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmpMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/emp/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/emp/list.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Java\apache-maven-3.6.1-bin\apache-maven-3.6.1\maven_repository" />
+        <option name="mavenHome" value="D:/Java/apache-maven-3.6.1-bin/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\Java\apache-maven-3.6.1-bin\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+    <option name="jreName" value="1.8" />
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2R0GNESeF0b3DujOBldmgymPJGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15917969" />
+    <property name="project.structure.side.proportion" value="0.26327944" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\employee-crmsystem\src\main\resources\templates\role" />
+      <recent name="E:\work\employee-crmsystem\src\main\resources\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\project\employee-crmsystem\src\main\resources\mybatis\mapper" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/roles" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ManageApplication">
+    <configuration name="MyGenerator.testCodeGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-simple-manager-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hu.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hu.generator" />
+      <option name="MAIN_CLASS_NAME" value="com.hu.generator.MyGenerator" />
+      <option name="METHOD_NAME" value="testCodeGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyGenerator.testGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="employee-crmsystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hu.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hu.generator" />
+      <option name="MAIN_CLASS_NAME" value="com.hu.generator.MyGenerator" />
+      <option name="METHOD_NAME" value="testGenerator" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="employee-crmsystem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hu.ManageApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MyGenerator.testCodeGenerator" />
+      <item itemvalue="JUnit.MyGenerator.testGenerator" />
+      <item itemvalue="Spring Boot.ManageApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyGenerator.testGenerator" />
+        <item itemvalue="JUnit.MyGenerator.testCodeGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="352a9f3e-b886-4d48-a4e7-6f2b8fb6a5a3" name="Default Changelist" comment="" />
+      <created>1686379542243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686379542243</updated>
+      <workItem from="1686379548556" duration="47194000" />
+      <workItem from="1686573402648" duration="7576000" />
+      <workItem from="1686657953287" duration="1811000" />
+      <workItem from="1686744280287" duration="5939000" />
+      <workItem from="1686768042298" duration="461000" />
+      <workItem from="1686794718337" duration="2166000" />
+      <workItem from="1686833270537" duration="2197000" />
+      <workItem from="1686861689254" duration="414000" />
+      <workItem from="1686895428119" duration="20000" />
+      <workItem from="1686925115177" duration="10155000" />
+      <workItem from="1686984586807" duration="9020000" />
+      <workItem from="1686994626162" duration="4862000" />
+      <workItem from="1687000703883" duration="281000" />
+      <workItem from="1687005864064" duration="5009000" />
+      <workItem from="1687050113053" duration="16357000" />
+      <workItem from="1687096352235" duration="7272000" />
+      <workItem from="1687218606759" duration="611000" />
+      <workItem from="1687264554428" duration="626000" />
+      <workItem from="1687313890940" duration="2321000" />
+      <workItem from="1687577800895" duration="647000" />
+      <workItem from="1687578612173" duration="809000" />
+      <workItem from="1687784722325" duration="5985000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat:员工添加&amp;修改">
+      <created>1686397174923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686397174923</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat:员工删除">
+      <created>1686462545963</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686462545963</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat:i18n">
+      <created>1686475268901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686475268901</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docs:配置文件">
+      <created>1686577252511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686577252511</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: 修改静态文件&amp;测试ooxml导出">
+      <created>1686613072880</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686613072880</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fix: 修改映射文件">
+      <created>1686979566627</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686979566627</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat:角色管理">
+      <created>1686979793398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686979793398</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat:角色管理">
+      <created>1686980923894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686980923894</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix:修改角色分页查询">
+      <created>1687000920088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687000920088</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat:员工按条件查询">
+      <created>1687061092535</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687061092535</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: 逻辑删除角色对象">
+      <created>1687061158712</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687061158712</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix:修改文件">
+      <created>1687183853863</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687183853863</updated>
+    </task>
+    <task id="LOCAL-00013" summary="fix:修改文件">
+      <created>1687183874168</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687183874168</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat:菜单功能">
+      <created>1687183938344</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687183938344</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix:修改文件">
+      <created>1687579021762</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687579021762</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix:修改文件">
+      <created>1687579324486</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687579324486</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat:员工添加&amp;修改" />
+    <MESSAGE value="feat:员工删除" />
+    <MESSAGE value="feat:i18n" />
+    <MESSAGE value="docs:配置文件" />
+    <MESSAGE value="fix: 修改静态文件&amp;测试ooxml导出" />
+    <MESSAGE value="fix: 修改映射文件" />
+    <MESSAGE value="feat:角色管理" />
+    <MESSAGE value="fix:修改角色分页查询" />
+    <MESSAGE value="feat:员工按条件查询" />
+    <MESSAGE value="feat: 逻辑删除角色对象" />
+    <MESSAGE value="feat:菜单功能" />
+    <MESSAGE value="fix:修改文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix:修改文件" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="239" y="70" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1687096678883">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="239" y="70" width="1164" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.816@0.0.1536.816" timestamp="1687096678883" />
+    <state x="602" y="120" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1687096669707">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="602" y="120" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.816@0.0.1536.816" timestamp="1687096669707" />
+    <state x="574" y="117" width="869" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1687058200807">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="574" y="117" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1687058200807" />
+    <state x="574" y="118" width="869" height="588" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1686474061568" />
+    <state x="551" y="204" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1687096618417">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="551" y="204" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.816@0.0.1536.816" timestamp="1687096618417" />
+    <state x="549" y="165" key="FileChooserDialogImpl" timestamp="1687579421284">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="165" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1687579421284" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1686699472167" />
+    <state width="1157" height="259" key="GridCell.Tab.0.bottom" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686862146944" />
+    <state width="1157" height="259" key="GridCell.Tab.0.center" timestamp="1687786120249">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1687786120249" />
+    <state width="1201" height="356" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1686862146944" />
+    <state width="1157" height="259" key="GridCell.Tab.0.left" timestamp="1687786120249">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1687786120249" />
+    <state width="1201" height="356" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1686862146944" />
+    <state width="1157" height="259" key="GridCell.Tab.0.right" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1686862146944" />
+    <state width="1157" height="259" key="GridCell.Tab.1.bottom" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.1.bottom/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.1.center" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.1.center/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.1.left" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.1.left/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.1.right" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.2.bottom" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.2.bottom/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.2.center" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.2.center/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.2.left" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.2.left/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state width="1157" height="259" key="GridCell.Tab.2.right" timestamp="1687786120250">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1157" height="259" key="GridCell.Tab.2.right/0.0.1536.816@0.0.1536.816" timestamp="1687786120250" />
+    <state width="1201" height="356" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1686862146945" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1686395415290">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1686395415290" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1687784733535">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1687784733535" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1686861712863" />
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2" timestamp="1687579340193">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="361" y="144" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1687579340193" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1686613087914" />
+    <state width="775" height="415" key="XDebugger.FullValuePopup" timestamp="1687053746753">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="775" height="415" key="XDebugger.FullValuePopup/0.0.1536.816@0.0.1536.816" timestamp="1687053746753" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1686383860857">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1686383860857" />
+  </component>
+</project>

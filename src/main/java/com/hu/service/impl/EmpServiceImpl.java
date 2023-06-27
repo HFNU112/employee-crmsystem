@@ -116,7 +116,7 @@ public class EmpServiceImpl implements EmpService {
      * @return
      */
     @Override
-    public PageBean<Emp> findPageQueryRole(PageBean<Emp> pageBean, Emp emp) {
+    public PageBean<Emp> findPageQueryEmp(PageBean<Emp> pageBean, Emp emp) {
         //1.获取前端传来的currentPage
         Integer currentPage = pageBean.getCurrentPage();
         //控制上一页操作超出
@@ -134,7 +134,7 @@ public class EmpServiceImpl implements EmpService {
         pb.setTotalCount(totalCount);
         //5.查询emp集合数据，先计算开始的索引
         Integer start = (currentPage - 1) * pageSizes;
-        List<Emp> empList = empMapper.findPageQueryRole(start, pageSizes, emp.getLastName(), emp.getGender(), emp.getDeptId());
+        List<Emp> empList = empMapper.findPageQueryEmp(start, pageSizes, emp.getLastName(), emp.getGender(), emp.getDeptId());
         pb.setRecords(empList);
         //6.计算总页码
         Integer totalPage =(totalCount % pageSizes)==0 ? totalCount / pageSizes:(totalCount / pageSizes)+1;

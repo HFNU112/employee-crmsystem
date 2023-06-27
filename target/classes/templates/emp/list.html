@@ -62,7 +62,7 @@
 				<div th:replace="commons/bar::sidebar(activeUri='emps')"></div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<!-- 条件搜索框 -->
-					<form action="#" method="get" th:action="@{/findPageQueryRole}">
+					<form action="#" method="get" th:action="@{/findPageQuery}">
 						<p> <span class="span_select">姓名:</span> <input type="text" name="lastName" placeholder="请输入姓名">
 							<select class="form-select" aria-label="Default select example">
 								<option selected>----请选择性别-----</option>

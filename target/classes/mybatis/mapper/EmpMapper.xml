@@ -39,7 +39,7 @@
         delete from sys_employee where id = #{id}
     </delete>
 
-    <select id="findPageQueryRole" parameterType="map" resultMap="empMap">
+    <select id="findPageQueryEmp" parameterType="map" resultMap="empMap">
         select * from sys_employee
         <where>
             <if test="lastName != null || lastName !='' ">

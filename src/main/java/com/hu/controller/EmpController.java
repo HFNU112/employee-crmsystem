@@ -130,8 +130,8 @@ public class EmpController {
      * @param model
      * @return
      */
-    @GetMapping("/findPageQueryRole")
-    public String findPageQueryRole(PageBean<Emp> pageBean, Emp emp, Model model){
+    @GetMapping("/findPageQuery")
+    public String findPageQueryEmp(PageBean<Emp> pageBean, Emp emp, Model model){
         if (pageBean.getCurrentPage()==null || "".equals(pageBean.getCurrentPage())){
             pageBean.setCurrentPage(1);
         }
@@ -139,7 +139,7 @@ public class EmpController {
             pageBean.setPageSizes(5);
         }
 
-        PageBean<Emp> pb = empService.findPageQueryRole(pageBean, emp);
+        PageBean<Emp> pb = empService.findPageQueryEmp(pageBean, emp);
         List<Department> departments = deptService.findAll();
 
         model.addAttribute("pb", pb);
