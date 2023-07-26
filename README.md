@@ -1,7 +1,9 @@
 # EmployeeCRMSystem
-> 麻雀虽小，五脏俱全。。。持续更新迭代
+> 麻雀虽小，五脏俱全。。。
+
+
 #### 介绍
-> 简单员工CRM系统v1.0
+> 简单员工CRMWeb端管理系统v1.0
 
 #### 项目演示
 1. 登录
@@ -26,11 +28,11 @@
 
 6. 分页查询
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/query.gif "query.gif")
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/page.gif "query.gif")
 
 7. 条件查询
 
-![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/sortPage.gif "sortPage.gif")
+![输入图片说明](https://husp-system.oss-cn-shanghai.aliyuncs.com/images/2023/0611/conditionQuery.gif "sortPage.gif")
 
 
 
