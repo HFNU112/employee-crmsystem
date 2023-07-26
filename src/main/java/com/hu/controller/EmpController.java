@@ -28,7 +28,7 @@ public class EmpController {
     private DeptService deptService;
 
     /**
-     * 查询员工列表
+     * 模糊查询员工列表
      * @param pageBean
      * @param emp
      * @param model
@@ -121,30 +121,6 @@ public class EmpController {
         String[] eids = request.getParameterValues("eid");
         empService.deleteByIds(eids);
         return "redirect:/emps";
-    }
-
-    /**
-     * 按员工条件分页查询
-     * @param pageBean
-     * @param emp
-     * @param model
-     * @return
-     */
-    @GetMapping("/findPageQuery")
-    public String findPageQueryEmp(PageBean<Emp> pageBean, Emp emp, Model model){
-        if (pageBean.getCurrentPage()==null || "".equals(pageBean.getCurrentPage())){
-            pageBean.setCurrentPage(1);
-        }
-        if (pageBean.getPageSizes()==null || "".equals(pageBean.getPageSizes())){
-            pageBean.setPageSizes(5);
-        }
-
-        PageBean<Emp> pb = empService.findPageQueryEmp(pageBean, emp);
-        List<Department> departments = deptService.findAll();
-
-        model.addAttribute("pb", pb);
-        model.addAttribute("departments", departments);
-        return "emp/list";
     }
 
 }

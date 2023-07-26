@@ -14,8 +14,18 @@
         <result column="hire_date" property="hireDate"></result>
         <result column="salary" property="salary"></result>
     </resultMap>
+    <sql id="empBase">
+        id, last_name, email, gender, birth, dept_id, hire_date, salary
+    </sql>
     <select id="findAll" parameterType="map" resultMap="empMap">
-        select id, last_name, email, gender, birth, dept_id, hire_date, salary from sys_employee
+        select e.*, d.department_name
+        from sys_employee e
+        LEFT JOIN sys_department d ON e.dept_id=d.id
+        <where>
+            <if test="lastName != null and lastName != ''">last_name like concat('%',#{lastName},'%')</if>
+            <if test="gender != null and gender != ''">and gender=#{gender}</if>
+            <if test="deptId != null and deptId != 0L">and dept_id=#{deptId}</if>
+        </where>
         limit #{start},#{pageSizes}
     </select>
 
@@ -38,22 +48,6 @@
     <delete id="deleteById" parameterType="long">
         delete from sys_employee where id = #{id}
     </delete>
-
-    <select id="findPageQueryEmp" parameterType="map" resultMap="empMap">
-        select * from sys_employee
-        <where>
-            <if test="lastName != null || lastName !='' ">
-                and last_name like #{lastName}
-            </if>
-            <if test="gender != null || gender != ''">
-                and gender = #{gender}
-            </if>
-            <if test="deptId != null || deptId != 0">
-                and dept_id = #{deptId}
-            </if>
-        </where>
-        limit #{start}, #{pageSizes}
-    </select>
 
     <select id="findPageTotalCount" parameterType="map" resultType="java.lang.Integer">
         select count(*) from sys_employee

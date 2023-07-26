@@ -62,7 +62,7 @@
 				<div th:replace="commons/bar::sidebar(activeUri='emps')"></div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 					<!-- 条件搜索框 -->
-					<form action="#" method="get" th:action="@{/findPageQuery}">
+					<form action="#" method="get" th:action="@{/emps}">
 						<p> <span class="span_select">姓名:</span> <input type="text" name="lastName" placeholder="请输入姓名">
 							<select class="form-select" aria-label="Default select example">
 								<option selected>----请选择性别-----</option>
@@ -72,7 +72,7 @@
 							<span class="span_select">部门:</span>
 							<select type="" name=deptId>
 								<option th:value="0">----请选择----</option>
-								<option th:each="dept:${departments}" th:value="${dept.id}">[[${dept.id}+${dept.departmentName}]]</option>
+								<option th:each="dept:${depts}" th:value="${dept.id}">[[${dept.id}+${dept.departmentName}]]</option>
 							</select>
 							<button type="submit" class="btn btn-primary">查询</button>
 						</p>
@@ -138,7 +138,7 @@
 										<span id="span_page"> 共 <span style="color: #ed181b">[[${pb.totalPage}]]</span> 页,  共<span style="color: #ed181b">[[${pb.totalCount}]]</span> 条记录 </span>
 									</li>
 									<li class="page-item">
-										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSizes=5,lastName=${emp.lastName},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
+										<a class="page-link" href="#" th:href="@{/emps(currentPage=${pb.currentPage}-1,pageSize=5,name=${emp.lastName},gender=${emp.gender},deptId=${emp.deptId})}" aria-label="Previous">
 											<span aria-hidden="true">&laquo;</span>
 										</a>
 									</li>

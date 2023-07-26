@@ -14,7 +14,8 @@ import java.util.List;
 public interface EmpMapper {
 
     //查询员工列表
-    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes);
+    List<Emp> findAll(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes,
+                      @Param("lastName") String lastName, @Param("gender") String gender, @Param("deptId") Long deptId);
 
     //查询总条数
     Integer findTotalCount();
@@ -30,9 +31,6 @@ public interface EmpMapper {
 
     //删除员工
     void deleteById(Long id);
-
-    //查询emp集合数据
-    List<Emp> findPageQueryEmp(@Param("start") Integer start, @Param("pageSizes") Integer pageSizes, @Param("lastName") String lastName,@Param("gender") String gender,@Param("deptId") Long deptId);
 
     //查询分页总数
     Integer findPageTotalCount(@Param("lastName") String lastName,@Param("gender") String gender,@Param("deptId") Long deptId);
